@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morning Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header>
+    <div>
+      <p class="eyebrow">PERSONAL ASSISTANT</p>
+      <h1>Morning Assistant 🤖</h1>
+      <p id="greeting">Good morning!</p>
+    </div>
+    <button id="speakBtn" class="mic" title="Speak">🎤</button>
+  </header>
+
+  <section class="cards">
+    <article><span>🕐</span><h3>Time</h3><p id="time">--:--</p></article>
+    <article><span>📅</span><h3>Date</h3><p id="date">--</p></article>
+    <article><span>📚</span><h3>Classes</h3><p id="classCount">0 today</p></article>
+    <article><span>✅</span><h3>Tasks</h3><p id="taskCount">0 pending</p></article>
+  </section>
+
+  <section class="panel">
+    <h2>Today's Classes</h2>
+    <div id="classes"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Today's Tasks</h2>
+    <div class="add">
+      <input id="taskInput" placeholder="Add a task...">
+      <button id="addTask">Add</button>
+    </div>
+    <div id="tasks"></div>
+  </section>
+
+  <section class="panel assistant">
+    <h2>Talk to me</h2>
+    <p id="status">Tap the microphone and say: “What are my tasks?”</p>
+    <button id="summaryBtn">🔊 Morning Summary</button>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
